@@ -1,0 +1,2 @@
+craftingTable.addShapeless("iron_stick_to_rod", <item:silentgear:iron_rod>, [<item:car:iron_stick>], null);
+craftingTable.addShapeless("iron_rod_to_stick", <item:car:iron_stick>, [<item:silentgear:iron_rod>], null);
