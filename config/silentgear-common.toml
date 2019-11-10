@@ -19,7 +19,7 @@
 		#When joining a new world, should players be given a blueprint package?
 		#The blueprint package gives some blueprints when used (right-click).
 		#To change what is given, override the starter_blueprints loot table.
-		spawnWithStarterBlueprints = true
+		spawnWithStarterBlueprints = false
 
 	#Settings for nerfed items.
 	#You can give items reduced durability to encourage use of Silent Gear tools.
@@ -47,7 +47,7 @@
 			mean = "C"
 			#The standard deviation (how 'spread out' the curve is) for random grading. Must be non-negative.
 			#Setting to zero would disable all randomness and grade all parts at the mean.
-			standardDeviation = 1.5
+			standardDeviation = 1.8
 
 	#Silent Gear allows some items to be used to place blocks.
 	#You can change which items place blocks and what other items they can activate.
@@ -56,23 +56,23 @@
 		placerTools = ["silentgear:axe", "silentgear:pickaxe", "silentgear:shovel"]
 		#These items can be used by placer tools. The player must be sneaking.
 		#Note that some items may not work with this feature.
-		placeableItems = ["danknull:dank_null", "torchbandolier:torch_bandolier", "xreliquary:sojourner_staff"]
+		placeableItems = ["minecraft:torch"]
 
 	#Settings for sinew drops
 	[item.sinew]
 		#These entities can drop sinew when killed.
 		dropsFrom = ["minecraft:cow", "minecraft:pig", "minecraft:sheep"]
 		#Drop rate of sinew (chance out of 1)
-		dropRate = 0.2
+		dropRate = 0.15
 
 	#Settings for gear (tools, weapons, and armor)
 	[item.gear]
 		#If true, gear breaks permanently, like vanilla tools and armor
-		breaksPermanently = false
+		breaksPermanently = true
 
 		[item.gear.repairs]
 			#Effectiveness of quick gear repairs (crafting grid). Set to 0 to disable quick repairs.
-			quickEffectiveness = 0.35
+			quickEffectiveness = 0
 			#Effectiveness of gear repairs done in an anvil. Set to 0 to disable anvil repairs.
 			anvilEffectiveness = 0.5
 
@@ -92,26 +92,26 @@
 		#Multipliers for stats on all gear. This allows the stats on all items to be increased or decreased
 		#without overriding every single file.
 		[item.gear.statMultipliers]
-			repair_efficiency = 1.0
+			repair_efficiency = 0.9
 			reach_distance = 1.0
-			magic_armor = 1.0
-			durability = 1.0
-			armor_durability = 1.0
-			harvest_speed = 1.0
-			attack_speed = 1.0
-			ranged_damage = 1.0
-			ranged_speed = 1.0
-			armor_toughness = 1.0
-			enchantability = 1.0
-			armor = 1.0
-			melee_damage = 1.0
+			magic_armor = 0.85
+			durability = 0.80
+			armor_durability = 0.85
+			harvest_speed = 0.85
+			attack_speed = 0.85
+			ranged_damage = 0.75
+			ranged_speed = 0.85
+			armor_toughness = 0.85
+			enchantability = 0.85
+			armor = 0.85
+			melee_damage = 0.85
 			harvest_level = 1.0
-			magic_damage = 1.0
-			rarity = 1.0
+			magic_damage = 0.85
+			rarity = 0.85
 
 		[item.gear.upgrades]
 			#If true, upgrade parts may only be applied in an anvil.
-			applyInAnvilOnly = false
+			applyInAnvilOnly = true
 
 [debug]
 
