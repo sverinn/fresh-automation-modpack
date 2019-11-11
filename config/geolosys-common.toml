@@ -38,7 +38,7 @@
 	debugWorldgen = false
 	#The fallback materials which a Deposit can replace if they're not specified by the deposit itself
 	#Format: Comma-delimited set of <modid:block> (see default for example)
-	defaultReplacementMaterials = ["minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack", "minecraft:sandstone"]
+	defaultReplacementMaterials = ["minecraft:water", "quark:stone_speleothem", "minecraft:packed_ice", "minecraft:dirt", "minecraft:lava", "quark:marble", "quark:brimstone", "quark:elder_prismarine", "quark:permafrost", "quark:limestone", "quark:slate", "quark:jasper", "quark:basalt", "minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack", "minecraft:sandstone"]
 	#Disable generation of Vanilla ores
 	disableVanillaOreGen = true
 
