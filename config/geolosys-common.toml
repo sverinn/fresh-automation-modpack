@@ -13,12 +13,12 @@
 	enableProPickDmg = false
 	#Max durability of a prospector's pick if damage is enabled
 	#Range: > 1
-	proPickDurability = 386
+	proPickDurability = 1024
 	#A list of <modid:block> that samples may not be placed on
 	samplePlacementBlacklist = ["minecraft:ice", "minecraft:packed_ice"]
 	#The range (depth) of the prospector's pick prospecting cycle
 	#Range: > 1
-	proPickRange = 6
+	proPickRange = 5
 	#A list of blocks which the prospector's pick should also detect.
 	#Format: Comma-delimited set of <modid:block> (see default for example)
 	proPickExtras = []
@@ -38,7 +38,7 @@
 	debugWorldgen = false
 	#The fallback materials which a Deposit can replace if they're not specified by the deposit itself
 	#Format: Comma-delimited set of <modid:block> (see default for example)
-	defaultReplacementMaterials = ["minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack", "minecraft:sandstone"]
+	defaultReplacementMaterials = ["minecraft:water", "minecraft:packed_ice", "minecraft:dirt", "minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack", "minecraft:sandstone"]
 	#Disable generation of Vanilla ores
 	disableVanillaOreGen = true
 
@@ -49,7 +49,7 @@
 	#This will make it so that Platinum will ONLY drop Osmium
 	enableOsmiumExclusively = true
 	#This will make it so that Autunite will drop Uranium AND Yellorium
-	enableYellorium = false
+	enableYellorium = true
 	#This will make is so that Coal has a rare chance of dropping sulfur
-	enableSulfur = false
+	enableSulfur = true
 
